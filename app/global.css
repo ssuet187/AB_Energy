@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        background-image: url("../public/images/back.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        background-size: cover;
+        
+}
+
+    h1{
+        @apply text-Orange text-4xl sm:text-5xl animate-pulse
+    }
+    
+    h2{
+        @apply text-3xl
+    }
+    h3{
+        @apply text-xl
+    }
+    h4{
+        @apply text-base
+    }
+    p{
+        @apply text-base justify-start 
+    }
+    h1,h2,h3,h4{
+        @apply font-display font-semibold;
+    }
+    html{
+        font-family:MerriWeather
+    }
+    
+   
+}
+.icons-contactme{
+    @apply text-2xl m-2
+}
+section{
+    @apply mb-10 font-serif 
+}
+section p{
+    @apply text-lg
+}
+main h2{
+    @apply uppercase text-black 
+}
+p{
+    @apply text-xl
+}
+.btn{
+    @apply w-1/2 h-12 text-black uppercase font-display text-xl px-4 font-semibold transition ease-in-out  hover:text-yellow hover:bg-black delay-200
+}
+.skill{
+    @apply bg-green-light text-lg py-2 px-4 w-fit rounded-md font-semibold;
+}
+
+.whatsapp-ico{
+    
+    fill: white;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background-color: #4dc247;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    /* box-shadow: 2px 2px 11px rgba(0,0,0,0.7); */
+    position: fixed;
+    bottom: 20px;
+    right : 20px;
+    z-index: 10;
+}
+
+.whatsapp-ico:hover{
+    box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+}
